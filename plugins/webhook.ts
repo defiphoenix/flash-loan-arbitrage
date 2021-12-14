@@ -1,4 +1,5 @@
 import axios from "axios";
+import { TestResult } from "../src/functions/watch";
 import { webhookConfig } from "./webhook.config";
 
 export interface IPayload {
@@ -15,8 +16,8 @@ export interface IPayload {
     test: number[];
 }
 
-export function webhookCall(payload: IPayload) {
-    axios.post(webhookConfig.webhookEndpoint, payload ,{
+export function webhookCall(payload: TestResult[]) {
+    axios.post(webhookConfig.webhookEndpoint, {payload: payload} ,{
         headers: {
             'Content-Type': 'application/json',
         }

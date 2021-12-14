@@ -1,3 +1,3 @@
 export const webhookConfig = {
-    webhookEndpoint: 'https://api-spicy.herokuapp.com/uni-sushi/webhook'
+    webhookEndpoint: 'http://localhost:3000/uni-sushi/webhook'
 }

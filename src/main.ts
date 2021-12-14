@@ -13,7 +13,7 @@ setInterval(() => {
     watchPair.forEach((pair: Token[]) => {
         watch(pair[0], pair[1])
     })
-}, 15000);
+}, 10000);
 
 
 
